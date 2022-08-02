@@ -1,6 +1,8 @@
 
 function average(numbers) {
-  return numbers.reduce((p, c)=> p + c, 0) / numbers.length;
+
+  const eaxactvalue = numbers.filter(Boolean)//[1,2,4]
+  return eaxactvalue.reduce((p, c)=> p + c, 0) / eaxactvalue.length;
 }
 
 module.exports = {average};
